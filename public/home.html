@@ -9,7 +9,7 @@
 </head>
 <body>
    <h1>Welcome to Your Expense Tracker</h1>
-   <div id="expense-list"></div>
+
    <h2>Add a New Expense</h2>
    <form id="expense-form">
       <input type="number" id="amount" placeholder="Amount" required step="0.01">
@@ -17,8 +17,15 @@
       <input type="date" id="date" required>
       <button type="submit">Add Expense</button>
    </form>
+
    <h2>Your Expenses</h2>
+   <div id="expense-list"></div>
+
+   <h2>Expense Summary by Category</h2>
+   <canvas id="expenseChart" width="250" height="250"></canvas>
+
    <button id="logout">Logout</button>
+
    <script src="home.js"></script>
 </body>
 </html>
